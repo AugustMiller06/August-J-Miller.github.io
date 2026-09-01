@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>August Miller — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="name">August Miller</div>
+        <div class="title">Finance Major · Fintech Minor</div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-name">August Miller</h1>
+          <p class="hero-role">Finance Major · Fintech Minor — University of Utah</p>
+          <p class="hero-blurb">
+            Specializing in blockchain & digital assets: stablecoins, DeFi, and oracle networks. Seeking roles
+            that combine financial domain knowledge with product and analytics work in digital‑asset platforms.
+          </p>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <div class="avatar" title="August Miller">
+            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="96" height="96" rx="18" fill="#EAF2FF"/>
+              <circle cx="48" cy="36" r="18" fill="#D0E8FF"/>
+              <rect x="18" y="62" width="60" height="14" rx="6" fill="#D0E8FF"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap section-grid">
+        <div class="card">
+          <h2>About</h2>
+          <p>
+            I am a Finance major at the University of Utah pursuing a Fintech minor with a focus on blockchain and digital assets,
+            particularly stablecoins, DeFi protocols, and oracle networks. I aim to build a career at the intersection of finance and technology,
+            working on product strategy, risk analysis, or engineering for digital‑asset platforms.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 id="resume">Resume</h2>
+          <p class="muted">Resume coming soon</p>
+          <div class="card-cta">
+            <button class="btn" disabled>Resume (coming soon)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <ul class="skills-grid" aria-label="Skills list">
+          <li>Blockchain Fundamentals</li>
+          <li>Smart Contracts (Solidity)</li>
+          <li>Stablecoins & DeFi</li>
+          <li>Oracle Networks</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+          <li>Git & GitHub</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects (placeholders)</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Business Analysis</h3>
+            <p>Analyze finance data and produce actionable reporting for stakeholders.</p>
+            <p class="small muted">Placeholder — add links/screenshots later</p>
+          </article>
+
+          <article class="project-card">
+            <h3>On‑Chain Analytics</h3>
+            <p>Scripts or dashboards to track stablecoin flows and DeFi metrics.</p>
+            <p class="small muted">Placeholder — add links/screenshots later</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Web3 Prototype</h3>
+            <p>Simple dApp or frontend demonstrating smart contract interactions.</p>
+            <p class="small muted">Placeholder — add links/screenshots later</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Process Improvement</h3>
+            <p>Redesign a finance workflow to reduce manual steps and errors.</p>
+            <p class="small muted">Placeholder — add links/screenshots later</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Email</strong><br><a href="mailto:august.miller@utah.edu">august.miller@utah.edu</a></p>
+          </div>
+          <div>
+            <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/august-j-miller/" target="_blank" rel="noopener">August J. Miller</a></p>
+          </div>
+          <div>
+            <p><strong>GitHub</strong><br><a href="https://github.com/AugustMiller06" target="_blank" rel="noopener">github.com/AugustMiller06</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="small muted">&copy; <span id="year"></span> August Miller</div>
+        <div class="small muted">Built with simple HTML & CSS</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# August Miller — Portfolio
+
+Polished single-page portfolio for IS 3060.
+
+Live site:
+https://AugustMiller06.github.io
+
+Summary
+This repository contains a clean, responsive portfolio landing page for August Miller. It includes: About, Skills, Projects (placeholders), Resume (coming soon), and Contact. The layout is optimized for readability and mobile devices.
+
+Files
+- index.html — main page (links to styles.css)
+- styles.css — site styles and responsive layout
+
+How to customize
+1. Edit index.html to update text, project descriptions, or add links/screenshots.
+2. Replace the avatar SVG with an image: <img src="profile.jpg" alt="August Miller" class="avatar-img"> and adjust CSS if needed.
+3. When ready, add resume.pdf to the repository root and replace the "Resume coming soon" button with an anchor to the PDF.
+4. Push to GitHub and enable Pages (Settings → Pages), or use a repository named username.github.io for automatic user pages.
+
+If you want me to:
+- Push these files to a new GitHub repository for you (tell me the repo name or confirm AugustMiller06/portfolio), I can create the repo and commit the files.
+- Swap the color palette, change fonts, or add a screenshot/sample project card, tell me which colors or assets to use.
+- Add a downloadable resume link once you upload resume.pdf — I can update the page.
+
+Tell me which next step you want and I'll do it.
