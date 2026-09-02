@@ -4,8 +4,7 @@ Polished single-page portfolio for IS 3060 coursework. This repository contains 
 
 Website
 
-- Project site (if you keep the current repository name): https://AugustMiller06.github.io/August-J-Miller.github.io/
-- User site (recommended for a shorter URL): rename the repository to `AugustMiller06.github.io` and publish — then the site will be available at: https://AugustMiller06.github.io
+- User site https://AugustMiller06.github.io
 
 Technologies used
 
